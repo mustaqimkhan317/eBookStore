@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadPdf">
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        app:layout_constraintTop_toBottomOf="@+id/selectFile"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/selectFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Select FIle"
+        app:layout_constraintTop_toBottomOf="@+id/setPrice"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="Anything"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/bookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Add Book Name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/notification"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/fetchFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintTop_toBottomOf="@+id/upload"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/setPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Price"
+        android:inputType="numberSigned|number|numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/bookName"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/goStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store"
+        app:layout_constraintTop_toBottomOf="@+id/fetchFiles"
+        tools:layout_editor_absoluteX="297dp" />
+
+</android.support.constraint.ConstraintLayout>
